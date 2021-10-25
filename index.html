@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="player">
+        <video
+          src="videos/clip4.mp4"
+          class="video"
+          playsinline
+        ></video>
+        <div class="controls">
+          <div class="controls-container">
+            <div class="progress-span" title="Seek">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="control-group">
+              <div class="left-controls">
+                <div class="play-options">
+                  <img src="./images/play.png" class="play-btn" name="play">
+                </div>
+                <div class="volume">
+                  <div class="volume-image">
+                    <img src="./images/sound.png" class="volume-btn">
+                  </div>
+                  <div class="volume-line" title="Change Volume">
+                    <div class="volume-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <!---Right Controls--->
+              <div class="right-controls">
+                <div class="speed" title="Playback Rate">
+                  <select name="playbackRate" class="player-speed">
+                    <option value="0.5">0.5 x</option>
+                    <option value="0.75">0.75 x</option>
+                    <option value="1">1.0 x</option>
+                    <option value="1.5">1.5 x</option>
+                    <option value="2">2.0 x</option>
+                  </select>
+                </div>
+                <div class="time">
+                  <span class="time-elapsed">00:00 /</span>
+                  <span class="time-duration">01:56 </span>
+                </div>
+                <div class="fullscreen">
+                  <img src="./images/full screen.png" class="fullscreen-btn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
